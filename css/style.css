@@ -43,9 +43,17 @@ img
 /* navbar */
 .navbar
 {
-background-color: blueviolet;
+/* background-color: blueviolet; */
+background: #A770EF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 color: white;
 height: 100px;
+}
+.navbar .container .nav 
+{
+   margin: 0 auto;
 }
 .navbar .flex
 {
@@ -66,6 +74,10 @@ margin: 0 5px;
     text-decoration: none;
     border-bottom: 2px solid white;
 }
+.navbar .navbar-brand:hover
+{
+    border: none;
+}
 /* showcase section */
 .showcase-text
 {
@@ -74,7 +86,11 @@ margin: 0 5px;
 .showcase
 {
     height: 400px;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
+    background: #A770EF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     color: white;
     position: relative;
 }
@@ -131,8 +147,12 @@ margin: 0 5px;
     bottom: -70px;
     right: 0;
     left: 0;
-    background-color:var(--primary-color);
+    /* background-color:var(--primary-color); */
     transform: skewY(-4deg) !important;
+    background: #A770EF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 /* stats */
 .stats
@@ -177,6 +197,10 @@ margin: 0 5px;
     margin: 10px 0;
     color: white;
     border-radius: 10px;
+    background: #A770EF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .cloud img
 {
@@ -187,6 +211,7 @@ margin: 0 5px;
 .languages .card
 {
     text-align: center;
+    width: 100%;
     margin: 10px 10px;  
     transition: transform 0.2s ease-in-out;
 }
@@ -202,11 +227,19 @@ margin: 0 5px;
 .features-head
 {
     color: white;
+    position: relative;
+    background: #A770EF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .features-head img,.features-sub-head img,.aboutus-head img
 {
 width: 200px;
 justify-self: flex-end;
+}
+.features-sub-head{
+    margin-top: 50px;
 }
 .features-sub-head img
 {
@@ -244,10 +277,18 @@ width: 100%;
 {
     grid-column: 1 / span 2;
 }
+.features-head #bottomwave  /* wavy pattern to the bottom of features head*/
+{
+    width: 100%;
+}
 /* aboutus */
 .aboutus-head
 {
     color: white;
+    background: #A770EF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .aboutus-main .card
 {
@@ -286,9 +327,13 @@ width: 100%;
 footer
 {
 color: white;
+background: #A770EF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 footer a{
-    color: chartreuse;
+    color: red;
 }
 footer i{
     margin: 0 5px;
@@ -391,7 +436,7 @@ footer a:hover
     /* mobile */
     @media(max-width:500px)
     {
-        .navbar
+        /* .navbar
         {
             height: 140px;
         }
@@ -404,7 +449,7 @@ footer a:hover
             padding: 10px;
             background-color:rgba(0, 0, 0, 0.2) ;
             border-radius: 15px;
-        }
+        } */
         .showcase-text
         {
             animation: slideInFromTop 2s ease-in;
